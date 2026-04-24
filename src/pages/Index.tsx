@@ -1,10 +1,12 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 import { Calendar, MapPin, Clock, Share2, CalendarPlus } from "lucide-react";
 import arch from "@/assets/mughal-arch.png";
 import Section from "@/components/wedding/Section";
 import Divider from "@/components/wedding/Divider";
 import Lanterns from "@/components/wedding/Lanterns";
 import MusicToggle from "@/components/wedding/MusicToggle";
+import Envelope from "@/components/wedding/Envelope";
 
 const EVENT = {
   title: "Walima — Amir & Sana",
@@ -27,8 +29,13 @@ const shareWhatsapp = () => {
 };
 
 const Index = () => {
+  const [opened, setOpened] = useState(false);
+
   return (
     <main className="relative w-full">
+      <AnimatePresence>
+        {!opened && <Envelope key="env" onOpen={() => setOpened(true)} />}
+      </AnimatePresence>
       <MusicToggle />
 
       {/* SECTION 1 — Hero */}
