@@ -6,52 +6,53 @@
 
 @layer base {
   :root {
-    /* Walima — beige, gold, cream palette */
-    --background: 40 45% 94%;
-    --foreground: 30 35% 18%;
+    /* Walima — maroon, crimson, vermilion, cream palette */
+    --background: 33 64% 83%;             /* #EED9B9 cream */
+    --foreground: 357 100% 18%;           /* #5E0006 deep maroon */
 
-    --card: 40 50% 97%;
-    --card-foreground: 30 35% 18%;
+    --card: 33 70% 90%;
+    --card-foreground: 357 100% 18%;
 
-    --popover: 40 50% 97%;
-    --popover-foreground: 30 35% 18%;
+    --popover: 33 70% 90%;
+    --popover-foreground: 357 100% 18%;
 
-    --primary: 38 55% 45%;          /* deep gold */
-    --primary-foreground: 40 50% 97%;
+    --primary: 4 92% 32%;                 /* #9B0F06 crimson */
+    --primary-foreground: 33 64% 92%;
 
-    --secondary: 36 30% 78%;        /* soft beige */
-    --secondary-foreground: 30 35% 22%;
+    --secondary: 33 55% 78%;              /* soft cream */
+    --secondary-foreground: 357 100% 18%;
 
-    --muted: 38 30% 88%;
-    --muted-foreground: 30 20% 38%;
+    --muted: 33 50% 86%;
+    --muted-foreground: 357 40% 28%;
 
-    --accent: 42 65% 58%;           /* gold accent */
-    --accent-foreground: 30 40% 15%;
+    --accent: 14 86% 45%;                 /* #D53E0F vermilion */
+    --accent-foreground: 33 64% 92%;
 
-    --destructive: 0 60% 45%;
-    --destructive-foreground: 40 50% 97%;
+    --destructive: 357 100% 25%;
+    --destructive-foreground: 33 64% 92%;
 
-    --border: 38 35% 70%;
-    --input: 38 35% 70%;
-    --ring: 38 55% 45%;
+    --border: 4 60% 40%;
+    --input: 4 60% 40%;
+    --ring: 4 92% 32%;
 
     --radius: 0.5rem;
 
-    /* Walima brand tokens */
-    --gold: 42 70% 52%;
-    --gold-light: 44 75% 70%;
-    --gold-deep: 36 60% 35%;
-    --cream: 40 55% 96%;
-    --beige: 36 35% 82%;
-    --brown: 28 35% 25%;
+    /* Walima brand tokens (kept names, remapped to red palette) */
+    --gold: 14 86% 45%;                   /* vermilion accent */
+    --gold-light: 33 64% 83%;             /* cream */
+    --gold-deep: 357 100% 18%;            /* maroon */
+    --cream: 33 64% 83%;
+    --beige: 33 55% 78%;
+    --brown: 357 100% 18%;
 
-    --gradient-gold: linear-gradient(135deg, hsl(42 75% 55%), hsl(36 60% 38%), hsl(44 80% 68%));
-    --gradient-soft: linear-gradient(180deg, hsl(40 55% 96% / 0.95), hsl(38 45% 88% / 0.9));
-    --gradient-radial: radial-gradient(ellipse at center, hsl(40 55% 96% / 0.6), hsl(38 35% 78% / 0.3));
+    --gradient-gold: linear-gradient(135deg, hsl(14 86% 45%), hsl(4 92% 32%), hsl(357 100% 18%));
+    --gradient-soft: linear-gradient(180deg, hsl(33 70% 92% / 0.95), hsl(33 55% 80% / 0.9));
+    --gradient-radial: radial-gradient(ellipse at center, hsl(33 64% 88% / 0.6), hsl(33 50% 78% / 0.3));
+    --gradient-envelope: linear-gradient(135deg, hsl(4 92% 32%), hsl(357 100% 18%));
 
-    --shadow-gold: 0 10px 40px -10px hsl(38 55% 45% / 0.35);
-    --shadow-soft: 0 4px 24px -6px hsl(30 35% 20% / 0.15);
-    --text-gold: hsl(36 60% 35%);
+    --shadow-gold: 0 10px 40px -10px hsl(4 92% 32% / 0.45);
+    --shadow-soft: 0 4px 24px -6px hsl(357 100% 18% / 0.25);
+    --text-gold: hsl(4 92% 32%);
   }
 }
 
