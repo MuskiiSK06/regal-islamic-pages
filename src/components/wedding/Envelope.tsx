@@ -78,10 +78,10 @@ const Envelope = ({ onOpen }: EnvelopeProps) => {
               initial={{ scale: 1 }}
               animate={opened ? { scale: 0, opacity: 0 } : { scale: 1 }}
               transition={{ duration: 0.4 }}
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 h-12 w-12 md:h-16 md:w-16 rounded-full flex items-center justify-center font-script text-2xl md:text-3xl text-primary-foreground border-2 border-primary-foreground/40 shadow-lg"
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 h-14 w-14 md:h-20 md:w-20 rounded-full flex items-center justify-center font-script text-xl md:text-2xl text-primary-foreground border-2 border-primary-foreground/40 shadow-lg whitespace-nowrap"
               style={{ background: "hsl(var(--accent))" }}
             >
-              W
+              A&amp;S
             </motion.div>
           </div>
 
