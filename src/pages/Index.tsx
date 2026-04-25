@@ -112,14 +112,12 @@ const Index = () => {
           <p className="font-display tracking-[0.4em] text-[11px] sm:text-xs text-brown/65 mb-6">
             T O G E T H E R &nbsp; F O R E V E R
           </p>
-          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-[1.15] pb-2 break-words max-w-full">
-            Amir Sohail<br />Shaikh
-          </h2>
-          <p className="font-script text-4xl sm:text-5xl md:text-7xl text-gold-deep my-3 md:my-4 leading-none">
-            &amp;
-          </p>
-          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-[1.15] pb-2 break-words max-w-full">
-            Sana Khan
+          <h2
+            className="font-script text-gold leading-[1.3] pb-3 pt-2 text-center w-full whitespace-nowrap"
+            style={{ fontSize: "clamp(1.5rem, 7.2vw, 5rem)" }}
+          >
+            Amir Sohail Shaikh{" "}
+            <span className="text-gold-deep">&amp;</span> Sana Khan
           </h2>
           <Divider className="mt-8" />
         </motion.div>
