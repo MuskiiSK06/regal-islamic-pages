@@ -40,7 +40,7 @@ const Index = () => {
       {/* SECTION 1 — Hero */}
       <Section className="pt-0">
         <Lanterns />
-        <div className="relative w-full max-w-2xl mx-auto pt-20 md:pt-24">
+        <div className="relative w-full max-w-2xl mx-auto pt-24 md:pt-28">
           <img
             src={arch}
             alt="Decorative Mughal arch"
@@ -52,23 +52,23 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.6, delay: 0.4 }}
-            className="absolute inset-0 flex flex-col items-center justify-center px-6 sm:px-10 md:px-20 text-center"
+            className="absolute inset-x-0 top-[18%] sm:top-[20%] md:top-[22%] flex flex-col items-center px-8 sm:px-12 md:px-20 text-center"
           >
-            <p className="font-script text-xl sm:text-2xl md:text-4xl text-gold leading-tight">
+            <p className="font-script text-3xl sm:text-4xl md:text-5xl text-gold leading-[1.2] pb-1">
               Bismillah
             </p>
-            <p className="font-display text-[10px] sm:text-xs md:text-sm tracking-[0.2em] text-brown/80 mt-1 md:mt-3">
+            <p className="font-display text-sm sm:text-base md:text-lg tracking-[0.15em] text-brown/80 mt-2">
               ﷽
             </p>
-            <p className="font-serif italic text-[11px] sm:text-sm md:text-lg text-brown/85 mt-2 md:mt-4 leading-snug">
+            <p className="font-serif italic text-sm sm:text-base md:text-xl text-brown/90 mt-3 md:mt-4 leading-snug font-medium">
               Assalamualaikum<br />warahmatullahi wabarakatuh
             </p>
-            <p className="font-serif text-[9px] sm:text-[10px] md:text-xs text-brown/70 mt-2 md:mt-3 max-w-[10rem] sm:max-w-[12rem] md:max-w-xs leading-snug">
+            <p className="font-serif text-xs sm:text-sm md:text-base text-brown/75 mt-3 max-w-[14rem] sm:max-w-[16rem] md:max-w-sm leading-snug font-medium">
               In the name of Allah,<br />the most beneficent &amp; most merciful
             </p>
           </motion.div>
         </div>
-        <p className="mt-10 text-xs uppercase tracking-[0.3em] text-gold-deep animate-shimmer">
+        <p className="mt-10 text-xs sm:text-sm uppercase tracking-[0.3em] text-gold-deep animate-shimmer font-display">
           Scroll to begin
         </p>
       </Section>
