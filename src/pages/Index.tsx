@@ -40,7 +40,7 @@ const Index = () => {
       {/* SECTION 1 — Hero */}
       <Section className="pt-0">
         <Lanterns />
-        <div className="relative w-full max-w-2xl mx-auto pt-24 md:pt-28">
+        <div className="relative w-full max-w-2xl mx-auto pt-20 md:pt-28">
           <img
             src={arch}
             alt="Decorative Mughal arch"
@@ -52,18 +52,30 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.6, delay: 0.4 }}
-            className="absolute inset-x-0 top-[18%] sm:top-[20%] md:top-[22%] flex flex-col items-center px-8 sm:px-12 md:px-20 text-center"
+            className="absolute inset-x-0 top-[22%] sm:top-[24%] md:top-[25%] bottom-[18%] flex flex-col items-center justify-center px-[14%] sm:px-[16%] md:px-[18%] text-center"
           >
-            <p className="font-script text-3xl sm:text-4xl md:text-5xl text-gold leading-[1.2] pb-1">
+            <p
+              className="font-script text-gold leading-[1.15] pb-1"
+              style={{ fontSize: "clamp(1.75rem, 8vw, 3rem)" }}
+            >
               Bismillah
             </p>
-            <p className="font-display text-sm sm:text-base md:text-lg tracking-[0.15em] text-brown/80 mt-2">
+            <p
+              className="font-display tracking-[0.15em] text-brown/80 mt-1"
+              style={{ fontSize: "clamp(0.85rem, 3.5vw, 1.125rem)" }}
+            >
               ﷽
             </p>
-            <p className="font-serif italic text-sm sm:text-base md:text-xl text-brown/90 mt-3 md:mt-4 leading-snug font-medium">
+            <p
+              className="font-serif italic text-brown/90 mt-2 leading-snug font-medium"
+              style={{ fontSize: "clamp(0.8rem, 3.4vw, 1.15rem)" }}
+            >
               Assalamualaikum<br />warahmatullahi wabarakatuh
             </p>
-            <p className="font-serif text-xs sm:text-sm md:text-base text-brown/75 mt-3 max-w-[14rem] sm:max-w-[16rem] md:max-w-sm leading-snug font-medium">
+            <p
+              className="font-serif text-brown/80 mt-2 leading-snug font-medium"
+              style={{ fontSize: "clamp(0.7rem, 2.9vw, 1rem)" }}
+            >
               In the name of Allah,<br />the most beneficent &amp; most merciful
             </p>
           </motion.div>
@@ -100,14 +112,12 @@ const Index = () => {
           <p className="font-display tracking-[0.4em] text-[11px] sm:text-xs text-brown/65 mb-6">
             T O G E T H E R &nbsp; F O R E V E R
           </p>
-          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-[1.15] pb-2 break-words max-w-full">
-            Amir Sohail<br />Shaikh
-          </h2>
-          <p className="font-script text-4xl sm:text-5xl md:text-7xl text-gold-deep my-3 md:my-4 leading-none">
-            &amp;
-          </p>
-          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-[1.15] pb-2 break-words max-w-full">
-            Sana Khan
+          <h2
+            className="font-script text-gold leading-[1.3] pb-3 pt-2 text-center w-full whitespace-nowrap"
+            style={{ fontSize: "clamp(1.5rem, 7.2vw, 5rem)" }}
+          >
+            Amir Sohail Shaikh{" "}
+            <span className="text-gold-deep">&amp;</span> Sana Khan
           </h2>
           <Divider className="mt-8" />
         </motion.div>
