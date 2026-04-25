@@ -215,14 +215,14 @@ const Index = () => {
       {/* SECTION 6 — Closing */}
       <Section>
         <Divider />
-        <p className="font-script text-5xl md:text-7xl text-gold leading-tight">
+        <h2 className="font-script text-5xl sm:text-6xl md:text-7xl text-gold leading-[1.15] pb-3">
           Barakallah
-        </p>
-        <p className="font-serif italic text-base md:text-xl text-brown/80 mt-6 max-w-md">
+        </h2>
+        <p className="font-serif italic text-base sm:text-lg md:text-xl text-brown/85 mt-6 max-w-md font-medium">
           We look forward to celebrating this blessed occasion with you and your loved ones.
         </p>
-        <p className="font-display tracking-[0.4em] text-[10px] md:text-xs text-brown/60 mt-10">
-          A M I R   &nbsp;&amp;&nbsp;   S A N A &nbsp;&nbsp;·&nbsp;&nbsp; 2 0 2 6
+        <p className="font-display tracking-[0.4em] text-[11px] sm:text-xs text-brown/65 mt-10">
+          A M I R &nbsp; S O H A I L &nbsp; S H A I K H &nbsp;&nbsp;·&nbsp;&nbsp; S A N A &nbsp; K H A N
         </p>
         <Divider />
       </Section>
