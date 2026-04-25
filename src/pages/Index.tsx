@@ -166,7 +166,7 @@ const Index = () => {
         <p className="font-display tracking-[0.4em] text-xs text-brown/60 mb-3">
           S A V E   T H E   D A T E
         </p>
-        <h3 className="font-script text-5xl md:text-6xl text-gold mb-10">
+        <h3 className="font-script text-5xl sm:text-6xl md:text-7xl text-gold mb-10 leading-[1.15] pb-2">
           Join us
         </h3>
 
