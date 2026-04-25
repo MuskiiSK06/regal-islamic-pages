@@ -7,6 +7,7 @@ import Section from "@/components/wedding/Section";
 import Divider from "@/components/wedding/Divider";
 import Lanterns from "@/components/wedding/Lanterns";
 import Envelope from "@/components/wedding/Envelope";
+import Birds from "@/components/wedding/Birds";
 
 const EVENT = {
   title: "Walima — Amir & Sana",
@@ -36,6 +37,18 @@ const Index = () => {
       <AnimatePresence>
         {!opened && <Envelope key="env" onOpen={() => setOpened(true)} />}
       </AnimatePresence>
+
+      {opened && <Birds />}
+
+      {/* Soft veil over the floral fixed background so text stays readable */}
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-0 z-0"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, hsl(33 64% 90% / 0.55) 0%, hsl(33 64% 86% / 0.78) 55%, hsl(33 64% 83% / 0.9) 100%)",
+        }}
+      />
 
       {/* SECTION 1 — Hero */}
       <Section className="pt-0">
