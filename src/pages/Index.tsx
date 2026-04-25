@@ -145,17 +145,17 @@ const Index = () => {
 
       {/* SECTION 4 — Family */}
       <Section>
-        <div className="cream-card border border-gold/40 rounded-lg px-8 py-12 md:px-14 md:py-16 max-w-xl">
-          <p className="font-display tracking-[0.4em] text-xs text-brown/60 mb-8">
-            W I T H   B L E S S I N G S   O F
+        <div className="cream-card border border-gold/40 rounded-lg px-6 py-10 sm:px-10 sm:py-12 md:px-14 md:py-16 max-w-xl w-full">
+          <p className="font-display tracking-[0.4em] text-[11px] sm:text-xs text-brown/65 mb-8">
+            W I T H &nbsp; B L E S S I N G S &nbsp; O F
           </p>
-          <p className="font-serif text-base md:text-lg text-brown/85 italic">Son of</p>
-          <p className="font-serif text-lg md:text-2xl text-brown mt-1">
+          <p className="font-serif text-base sm:text-lg md:text-xl text-brown/85 italic font-medium">Son of</p>
+          <p className="font-serif text-lg sm:text-xl md:text-2xl text-brown mt-1 font-medium">
             Mohammed Abullais Shaikh<br />&amp; Anwari Begam Shaikh
           </p>
           <Divider />
-          <p className="font-serif text-base md:text-lg text-brown/85 italic">Daughter of</p>
-          <p className="font-serif text-lg md:text-2xl text-brown mt-1">
+          <p className="font-serif text-base sm:text-lg md:text-xl text-brown/85 italic font-medium">Daughter of</p>
+          <p className="font-serif text-lg sm:text-xl md:text-2xl text-brown mt-1 font-medium">
             Haji Shamshulhuda Khan<br />&amp; Azizunnisa Khan
           </p>
         </div>
