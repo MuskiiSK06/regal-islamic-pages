@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Calendar, MapPin, Clock, Share2, CalendarPlus } from "lucide-react";
 import arch from "@/assets/mughal-arch.png";
+import couple from "@/assets/couple-illustration.png";
 import Section from "@/components/wedding/Section";
 import Divider from "@/components/wedding/Divider";
 import Lanterns from "@/components/wedding/Lanterns";
@@ -51,18 +52,18 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.6, delay: 0.4 }}
-            className="absolute inset-0 flex flex-col items-center justify-center px-10 md:px-20 text-center"
+            className="absolute inset-0 flex flex-col items-center justify-center px-6 sm:px-10 md:px-20 text-center"
           >
-            <p className="font-script text-2xl md:text-4xl text-gold leading-tight">
+            <p className="font-script text-xl sm:text-2xl md:text-4xl text-gold leading-tight">
               Bismillah
             </p>
-            <p className="font-display text-[10px] md:text-sm tracking-[0.25em] text-brown/80 mt-2 md:mt-4">
+            <p className="font-display text-[10px] sm:text-xs md:text-sm tracking-[0.2em] text-brown/80 mt-1 md:mt-3">
               ﷽
             </p>
-            <p className="font-serif italic text-sm md:text-lg text-brown/85 mt-3 md:mt-5 leading-snug">
+            <p className="font-serif italic text-[11px] sm:text-sm md:text-lg text-brown/85 mt-2 md:mt-4 leading-snug">
               Assalamualaikum<br />warahmatullahi wabarakatuh
             </p>
-            <p className="font-serif text-[10px] md:text-xs text-brown/70 mt-3 md:mt-4 max-w-[12rem] md:max-w-xs">
+            <p className="font-serif text-[9px] sm:text-[10px] md:text-xs text-brown/70 mt-2 md:mt-3 max-w-[10rem] sm:max-w-[12rem] md:max-w-xs leading-snug">
               In the name of Allah,<br />the most beneficent &amp; most merciful
             </p>
           </motion.div>
