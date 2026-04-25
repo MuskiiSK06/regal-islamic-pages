@@ -130,7 +130,7 @@ const Index = () => {
         <p className="font-display tracking-[0.3em] text-[10px] text-brown/60 mt-6 mb-4">
           O U R &nbsp; S T O R Y
         </p>
-        <p className="font-serif italic text-sm sm:text-base md:text-lg text-brown/85 leading-relaxed max-w-xl px-2">
+        <p className="font-serif italic text-base sm:text-lg md:text-xl text-brown/90 leading-relaxed max-w-xl px-2 font-medium">
           A beautiful new chapter of our lives is about to begin, filled with love,
           faith, and togetherness. As we step forward hand in hand, we carry dreams
           of a future built on trust, understanding, and endless support for one
