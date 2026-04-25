@@ -5,7 +5,6 @@ import arch from "@/assets/mughal-arch.png";
 import Section from "@/components/wedding/Section";
 import Divider from "@/components/wedding/Divider";
 import Lanterns from "@/components/wedding/Lanterns";
-import MusicToggle from "@/components/wedding/MusicToggle";
 import Envelope from "@/components/wedding/Envelope";
 
 const EVENT = {
@@ -36,7 +35,6 @@ const Index = () => {
       <AnimatePresence>
         {!opened && <Envelope key="env" onOpen={() => setOpened(true)} />}
       </AnimatePresence>
-      <MusicToggle />
 
       {/* SECTION 1 — Hero */}
       <Section className="pt-0">
