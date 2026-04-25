@@ -76,13 +76,13 @@ const Index = () => {
       {/* SECTION 2 — Invitation */}
       <Section>
         <Divider />
-        <p className="font-serif italic text-lg md:text-2xl text-brown/80">
+        <p className="font-serif italic text-lg sm:text-xl md:text-2xl text-brown/85 font-medium">
           You are cordially invited to the
         </p>
-        <h2 className="font-script text-7xl md:text-9xl text-gold mt-4 md:mt-6 leading-none">
+        <h2 className="font-script text-6xl sm:text-7xl md:text-9xl text-gold mt-6 md:mt-8 leading-[1.15] pb-3 px-4">
           Walima
         </h2>
-        <p className="font-display tracking-[0.4em] text-xs md:text-sm text-brown/70 mt-4">
+        <p className="font-display tracking-[0.4em] text-xs sm:text-sm md:text-base text-brown/75 mt-4">
           R E C E P T I O N
         </p>
         <Divider />
@@ -95,18 +95,18 @@ const Index = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.4, ease: "easeOut" }}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center w-full"
         >
-          <p className="font-display tracking-[0.4em] text-xs text-brown/60 mb-6">
-            T O G E T H E R   F O R E V E R
+          <p className="font-display tracking-[0.4em] text-[11px] sm:text-xs text-brown/65 mb-6">
+            T O G E T H E R &nbsp; F O R E V E R
           </p>
-          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-tight break-words">
-            Amir Sohail
+          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-[1.15] pb-2 break-words max-w-full">
+            Amir Sohail<br />Shaikh
           </h2>
-          <p className="font-script text-4xl sm:text-5xl md:text-7xl text-gold-deep my-2 md:my-4">
+          <p className="font-script text-4xl sm:text-5xl md:text-7xl text-gold-deep my-3 md:my-4 leading-none">
             &amp;
           </p>
-          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-tight break-words">
+          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-[1.15] pb-2 break-words max-w-full">
             Sana Khan
           </h2>
           <Divider className="mt-8" />
