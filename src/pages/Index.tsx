@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Calendar, MapPin, Clock, Share2, CalendarPlus } from "lucide-react";
 import arch from "@/assets/mughal-arch.png";
+import couple from "@/assets/couple-illustration.png";
 import Section from "@/components/wedding/Section";
 import Divider from "@/components/wedding/Divider";
 import Lanterns from "@/components/wedding/Lanterns";
@@ -51,18 +52,18 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.6, delay: 0.4 }}
-            className="absolute inset-0 flex flex-col items-center justify-center px-10 md:px-20 text-center"
+            className="absolute inset-0 flex flex-col items-center justify-center px-6 sm:px-10 md:px-20 text-center"
           >
-            <p className="font-script text-2xl md:text-4xl text-gold leading-tight">
+            <p className="font-script text-xl sm:text-2xl md:text-4xl text-gold leading-tight">
               Bismillah
             </p>
-            <p className="font-display text-[10px] md:text-sm tracking-[0.25em] text-brown/80 mt-2 md:mt-4">
+            <p className="font-display text-[10px] sm:text-xs md:text-sm tracking-[0.2em] text-brown/80 mt-1 md:mt-3">
               ﷽
             </p>
-            <p className="font-serif italic text-sm md:text-lg text-brown/85 mt-3 md:mt-5 leading-snug">
+            <p className="font-serif italic text-[11px] sm:text-sm md:text-lg text-brown/85 mt-2 md:mt-4 leading-snug">
               Assalamualaikum<br />warahmatullahi wabarakatuh
             </p>
-            <p className="font-serif text-[10px] md:text-xs text-brown/70 mt-3 md:mt-4 max-w-[12rem] md:max-w-xs">
+            <p className="font-serif text-[9px] sm:text-[10px] md:text-xs text-brown/70 mt-2 md:mt-3 max-w-[10rem] sm:max-w-[12rem] md:max-w-xs leading-snug">
               In the name of Allah,<br />the most beneficent &amp; most merciful
             </p>
           </motion.div>
@@ -99,17 +100,47 @@ const Index = () => {
           <p className="font-display tracking-[0.4em] text-xs text-brown/60 mb-6">
             T O G E T H E R   F O R E V E R
           </p>
-          <h2 className="font-script text-6xl md:text-8xl text-gold leading-tight">
+          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-tight break-words">
             Amir Sohail
           </h2>
-          <p className="font-script text-5xl md:text-7xl text-gold-deep my-2 md:my-4">
+          <p className="font-script text-4xl sm:text-5xl md:text-7xl text-gold-deep my-2 md:my-4">
             &amp;
           </p>
-          <h2 className="font-script text-6xl md:text-8xl text-gold leading-tight">
+          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-tight break-words">
             Sana Khan
           </h2>
           <Divider className="mt-8" />
         </motion.div>
+      </Section>
+
+      {/* SECTION 3.5 — Couple Illustration & Invitation Note */}
+      <Section>
+        <motion.img
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          src={couple}
+          alt="Illustration of bride and groom in traditional wedding attire"
+          width={768}
+          height={1024}
+          loading="lazy"
+          className="w-44 sm:w-56 md:w-72 h-auto select-none pointer-events-none drop-shadow-[0_8px_20px_rgba(94,0,6,0.25)]"
+        />
+        <p className="font-display tracking-[0.3em] text-[10px] text-brown/60 mt-6 mb-4">
+          O U R &nbsp; S T O R Y
+        </p>
+        <p className="font-serif italic text-sm sm:text-base md:text-lg text-brown/85 leading-relaxed max-w-xl px-2">
+          A beautiful new chapter of our lives is about to begin, filled with love,
+          faith, and togetherness. As we step forward hand in hand, we carry dreams
+          of a future built on trust, understanding, and endless support for one
+          another. This journey is not just about two hearts uniting, but about
+          creating a life full of shared moments, laughter, and cherished memories.
+          With the blessings of our families and the grace of Allah, we begin this
+          path with hope and gratitude. We warmly invite you to join us, celebrate
+          our union, and be a part of the joy as our forever story unfolds.
+        </p>
+        <Divider className="mt-8" />
       </Section>
 
       {/* SECTION 4 — Family */}
