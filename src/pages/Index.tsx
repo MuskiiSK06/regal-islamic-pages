@@ -52,7 +52,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.6, delay: 0.4 }}
-            className="absolute inset-x-0 top-[22%] sm:top-[24%] md:top-[25%] bottom-[18%] flex flex-col items-center justify-center px-[14%] sm:px-[16%] md:px-[18%] text-center"
+            className="absolute inset-x-0 top-[30%] sm:top-[30%] md:top-[31%] bottom-[14%] flex flex-col items-center justify-center px-[14%] sm:px-[16%] md:px-[18%] text-center"
           >
             <p
               className="font-script text-gold leading-[1.15] pb-1"
@@ -113,11 +113,12 @@ const Index = () => {
             T O G E T H E R &nbsp; F O R E V E R
           </p>
           <h2
-            className="font-script text-gold leading-[1.3] pb-3 pt-2 text-center w-full whitespace-nowrap"
-            style={{ fontSize: "clamp(1.5rem, 7.2vw, 5rem)" }}
+            className="font-script text-gold leading-[1.25] pb-3 pt-2 text-center w-full"
+            style={{ fontSize: "clamp(2.25rem, 10vw, 5.5rem)" }}
           >
-            Amir Sohail Shaikh{" "}
-            <span className="text-gold-deep">&amp;</span> Sana Khan
+            <span className="block whitespace-nowrap">Amir Sohail Shaikh</span>
+            <span className="block whitespace-nowrap text-gold-deep my-1" style={{ fontSize: "0.55em" }}>&amp;</span>
+            <span className="block whitespace-nowrap">Sana Khan</span>
           </h2>
           <Divider className="mt-8" />
         </motion.div>
@@ -231,9 +232,14 @@ const Index = () => {
         <p className="font-serif italic text-base sm:text-lg md:text-xl text-brown/85 mt-6 max-w-md font-medium">
           We look forward to celebrating this blessed occasion with you and your loved ones.
         </p>
-        <p className="font-display tracking-[0.4em] text-[11px] sm:text-xs text-brown/65 mt-10">
-          A M I R &nbsp; S O H A I L &nbsp; S H A I K H &nbsp;&nbsp;·&nbsp;&nbsp; S A N A &nbsp; K H A N
-        </p>
+        <div
+          className="font-display text-brown/70 mt-10 text-center w-full max-w-md mx-auto px-4"
+          style={{ fontSize: "clamp(0.65rem, 2.6vw, 0.8rem)", letterSpacing: "0.32em" }}
+        >
+          <p className="whitespace-nowrap">AMIR SOHAIL SHAIKH</p>
+          <p className="text-gold-deep my-1">·</p>
+          <p className="whitespace-nowrap">SANA KHAN</p>
+        </div>
         <Divider />
       </Section>
     </main>
