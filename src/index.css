@@ -62,11 +62,20 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
     background-image: url('/src/assets/parchment-bg.jpg');
     background-size: 600px;
     background-repeat: repeat;
     background-attachment: fixed;
   }
+  @media (min-width: 768px) {
+    body { font-size: 18px; }
+  }
+  p { font-weight: 500; }
 }
 
 @layer utilities {

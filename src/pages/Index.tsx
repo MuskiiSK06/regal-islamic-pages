@@ -40,7 +40,7 @@ const Index = () => {
       {/* SECTION 1 — Hero */}
       <Section className="pt-0">
         <Lanterns />
-        <div className="relative w-full max-w-2xl mx-auto pt-20 md:pt-24">
+        <div className="relative w-full max-w-2xl mx-auto pt-24 md:pt-28">
           <img
             src={arch}
             alt="Decorative Mughal arch"
@@ -52,23 +52,23 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.6, delay: 0.4 }}
-            className="absolute inset-0 flex flex-col items-center justify-center px-6 sm:px-10 md:px-20 text-center"
+            className="absolute inset-x-0 top-[18%] sm:top-[20%] md:top-[22%] flex flex-col items-center px-8 sm:px-12 md:px-20 text-center"
           >
-            <p className="font-script text-xl sm:text-2xl md:text-4xl text-gold leading-tight">
+            <p className="font-script text-3xl sm:text-4xl md:text-5xl text-gold leading-[1.2] pb-1">
               Bismillah
             </p>
-            <p className="font-display text-[10px] sm:text-xs md:text-sm tracking-[0.2em] text-brown/80 mt-1 md:mt-3">
+            <p className="font-display text-sm sm:text-base md:text-lg tracking-[0.15em] text-brown/80 mt-2">
               ﷽
             </p>
-            <p className="font-serif italic text-[11px] sm:text-sm md:text-lg text-brown/85 mt-2 md:mt-4 leading-snug">
+            <p className="font-serif italic text-sm sm:text-base md:text-xl text-brown/90 mt-3 md:mt-4 leading-snug font-medium">
               Assalamualaikum<br />warahmatullahi wabarakatuh
             </p>
-            <p className="font-serif text-[9px] sm:text-[10px] md:text-xs text-brown/70 mt-2 md:mt-3 max-w-[10rem] sm:max-w-[12rem] md:max-w-xs leading-snug">
+            <p className="font-serif text-xs sm:text-sm md:text-base text-brown/75 mt-3 max-w-[14rem] sm:max-w-[16rem] md:max-w-sm leading-snug font-medium">
               In the name of Allah,<br />the most beneficent &amp; most merciful
             </p>
           </motion.div>
         </div>
-        <p className="mt-10 text-xs uppercase tracking-[0.3em] text-gold-deep animate-shimmer">
+        <p className="mt-10 text-xs sm:text-sm uppercase tracking-[0.3em] text-gold-deep animate-shimmer font-display">
           Scroll to begin
         </p>
       </Section>
@@ -76,13 +76,13 @@ const Index = () => {
       {/* SECTION 2 — Invitation */}
       <Section>
         <Divider />
-        <p className="font-serif italic text-lg md:text-2xl text-brown/80">
+        <p className="font-serif italic text-lg sm:text-xl md:text-2xl text-brown/85 font-medium">
           You are cordially invited to the
         </p>
-        <h2 className="font-script text-7xl md:text-9xl text-gold mt-4 md:mt-6 leading-none">
+        <h2 className="font-script text-6xl sm:text-7xl md:text-9xl text-gold mt-6 md:mt-8 leading-[1.15] pb-3 px-4">
           Walima
         </h2>
-        <p className="font-display tracking-[0.4em] text-xs md:text-sm text-brown/70 mt-4">
+        <p className="font-display tracking-[0.4em] text-xs sm:text-sm md:text-base text-brown/75 mt-4">
           R E C E P T I O N
         </p>
         <Divider />
@@ -95,18 +95,18 @@ const Index = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.4, ease: "easeOut" }}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center w-full"
         >
-          <p className="font-display tracking-[0.4em] text-xs text-brown/60 mb-6">
-            T O G E T H E R   F O R E V E R
+          <p className="font-display tracking-[0.4em] text-[11px] sm:text-xs text-brown/65 mb-6">
+            T O G E T H E R &nbsp; F O R E V E R
           </p>
-          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-tight break-words">
-            Amir Sohail
+          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-[1.15] pb-2 break-words max-w-full">
+            Amir Sohail<br />Shaikh
           </h2>
-          <p className="font-script text-4xl sm:text-5xl md:text-7xl text-gold-deep my-2 md:my-4">
+          <p className="font-script text-4xl sm:text-5xl md:text-7xl text-gold-deep my-3 md:my-4 leading-none">
             &amp;
           </p>
-          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-tight break-words">
+          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-[1.15] pb-2 break-words max-w-full">
             Sana Khan
           </h2>
           <Divider className="mt-8" />
@@ -130,7 +130,7 @@ const Index = () => {
         <p className="font-display tracking-[0.3em] text-[10px] text-brown/60 mt-6 mb-4">
           O U R &nbsp; S T O R Y
         </p>
-        <p className="font-serif italic text-sm sm:text-base md:text-lg text-brown/85 leading-relaxed max-w-xl px-2">
+        <p className="font-serif italic text-base sm:text-lg md:text-xl text-brown/90 leading-relaxed max-w-xl px-2 font-medium">
           A beautiful new chapter of our lives is about to begin, filled with love,
           faith, and togetherness. As we step forward hand in hand, we carry dreams
           of a future built on trust, understanding, and endless support for one
@@ -145,17 +145,17 @@ const Index = () => {
 
       {/* SECTION 4 — Family */}
       <Section>
-        <div className="cream-card border border-gold/40 rounded-lg px-8 py-12 md:px-14 md:py-16 max-w-xl">
-          <p className="font-display tracking-[0.4em] text-xs text-brown/60 mb-8">
-            W I T H   B L E S S I N G S   O F
+        <div className="cream-card border border-gold/40 rounded-lg px-6 py-10 sm:px-10 sm:py-12 md:px-14 md:py-16 max-w-xl w-full">
+          <p className="font-display tracking-[0.4em] text-[11px] sm:text-xs text-brown/65 mb-8">
+            W I T H &nbsp; B L E S S I N G S &nbsp; O F
           </p>
-          <p className="font-serif text-base md:text-lg text-brown/85 italic">Son of</p>
-          <p className="font-serif text-lg md:text-2xl text-brown mt-1">
+          <p className="font-serif text-base sm:text-lg md:text-xl text-brown/85 italic font-medium">Son of</p>
+          <p className="font-serif text-lg sm:text-xl md:text-2xl text-brown mt-1 font-medium">
             Mohammed Abullais Shaikh<br />&amp; Anwari Begam Shaikh
           </p>
           <Divider />
-          <p className="font-serif text-base md:text-lg text-brown/85 italic">Daughter of</p>
-          <p className="font-serif text-lg md:text-2xl text-brown mt-1">
+          <p className="font-serif text-base sm:text-lg md:text-xl text-brown/85 italic font-medium">Daughter of</p>
+          <p className="font-serif text-lg sm:text-xl md:text-2xl text-brown mt-1 font-medium">
             Haji Shamshulhuda Khan<br />&amp; Azizunnisa Khan
           </p>
         </div>
@@ -166,7 +166,7 @@ const Index = () => {
         <p className="font-display tracking-[0.4em] text-xs text-brown/60 mb-3">
           S A V E   T H E   D A T E
         </p>
-        <h3 className="font-script text-5xl md:text-6xl text-gold mb-10">
+        <h3 className="font-script text-5xl sm:text-6xl md:text-7xl text-gold mb-10 leading-[1.15] pb-2">
           Join us
         </h3>
 
@@ -215,14 +215,14 @@ const Index = () => {
       {/* SECTION 6 — Closing */}
       <Section>
         <Divider />
-        <p className="font-script text-5xl md:text-7xl text-gold leading-tight">
+        <h2 className="font-script text-5xl sm:text-6xl md:text-7xl text-gold leading-[1.15] pb-3">
           Barakallah
-        </p>
-        <p className="font-serif italic text-base md:text-xl text-brown/80 mt-6 max-w-md">
+        </h2>
+        <p className="font-serif italic text-base sm:text-lg md:text-xl text-brown/85 mt-6 max-w-md font-medium">
           We look forward to celebrating this blessed occasion with you and your loved ones.
         </p>
-        <p className="font-display tracking-[0.4em] text-[10px] md:text-xs text-brown/60 mt-10">
-          A M I R   &nbsp;&amp;&nbsp;   S A N A &nbsp;&nbsp;·&nbsp;&nbsp; 2 0 2 6
+        <p className="font-display tracking-[0.4em] text-[11px] sm:text-xs text-brown/65 mt-10">
+          A M I R &nbsp; S O H A I L &nbsp; S H A I K H &nbsp;&nbsp;·&nbsp;&nbsp; S A N A &nbsp; K H A N
         </p>
         <Divider />
       </Section>
