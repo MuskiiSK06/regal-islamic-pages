@@ -100,17 +100,47 @@ const Index = () => {
           <p className="font-display tracking-[0.4em] text-xs text-brown/60 mb-6">
             T O G E T H E R   F O R E V E R
           </p>
-          <h2 className="font-script text-6xl md:text-8xl text-gold leading-tight">
+          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-tight break-words">
             Amir Sohail
           </h2>
-          <p className="font-script text-5xl md:text-7xl text-gold-deep my-2 md:my-4">
+          <p className="font-script text-4xl sm:text-5xl md:text-7xl text-gold-deep my-2 md:my-4">
             &amp;
           </p>
-          <h2 className="font-script text-6xl md:text-8xl text-gold leading-tight">
+          <h2 className="font-script text-5xl sm:text-6xl md:text-8xl text-gold leading-tight break-words">
             Sana Khan
           </h2>
           <Divider className="mt-8" />
         </motion.div>
+      </Section>
+
+      {/* SECTION 3.5 — Couple Illustration & Invitation Note */}
+      <Section>
+        <motion.img
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          src={couple}
+          alt="Illustration of bride and groom in traditional wedding attire"
+          width={768}
+          height={1024}
+          loading="lazy"
+          className="w-44 sm:w-56 md:w-72 h-auto select-none pointer-events-none drop-shadow-[0_8px_20px_rgba(94,0,6,0.25)]"
+        />
+        <p className="font-display tracking-[0.3em] text-[10px] text-brown/60 mt-6 mb-4">
+          O U R &nbsp; S T O R Y
+        </p>
+        <p className="font-serif italic text-sm sm:text-base md:text-lg text-brown/85 leading-relaxed max-w-xl px-2">
+          A beautiful new chapter of our lives is about to begin, filled with love,
+          faith, and togetherness. As we step forward hand in hand, we carry dreams
+          of a future built on trust, understanding, and endless support for one
+          another. This journey is not just about two hearts uniting, but about
+          creating a life full of shared moments, laughter, and cherished memories.
+          With the blessings of our families and the grace of Allah, we begin this
+          path with hope and gratitude. We warmly invite you to join us, celebrate
+          our union, and be a part of the joy as our forever story unfolds.
+        </p>
+        <Divider className="mt-8" />
       </Section>
 
       {/* SECTION 4 — Family */}
