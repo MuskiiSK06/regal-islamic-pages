@@ -77,11 +77,19 @@ const Envelope = ({ onOpen }: EnvelopeProps) => {
             <motion.div
               initial={{ scale: 1 }}
               animate={opened ? { scale: 0, opacity: 0 } : { scale: 1 }}
+              whileHover={{ scale: 1.08 }}
+              whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.4 }}
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 h-14 w-14 md:h-20 md:w-20 rounded-full flex items-center justify-center font-script text-xl md:text-2xl text-primary-foreground border-2 border-primary-foreground/40 shadow-lg whitespace-nowrap"
-              style={{ background: "hsl(var(--accent))" }}
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 h-16 w-16 md:h-24 md:w-24 rounded-full flex items-center justify-center font-display font-semibold tracking-[0.15em] text-base md:text-xl text-primary-foreground border-2 border-primary-foreground/50 whitespace-nowrap"
+              style={{
+                background:
+                  "radial-gradient(circle at 30% 25%, hsl(14 86% 55%) 0%, hsl(4 92% 32%) 45%, hsl(357 100% 18%) 100%)",
+                boxShadow:
+                  "inset -4px -6px 12px hsl(357 100% 10% / 0.55), inset 4px 6px 10px hsl(33 64% 90% / 0.25), 0 8px 22px hsl(4 92% 18% / 0.55), 0 0 24px hsl(14 86% 45% / 0.35)",
+                textShadow: "0 1px 2px hsl(357 100% 10% / 0.6)",
+              }}
             >
-              A&amp;S
+              A&nbsp;&amp;&nbsp;S
             </motion.div>
           </div>
 

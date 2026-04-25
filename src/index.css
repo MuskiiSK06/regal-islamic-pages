@@ -67,10 +67,15 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    background-image: url('/src/assets/parchment-bg.jpg');
-    background-size: 600px;
-    background-repeat: repeat;
+    background-image: url('/src/assets/wedding-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+  @supports (-webkit-touch-callout: none) {
+    /* iOS Safari doesn't support fixed bg reliably — fall back gracefully */
+    body { background-attachment: scroll; background-size: 100% auto; }
   }
   @media (min-width: 768px) {
     body { font-size: 18px; }
