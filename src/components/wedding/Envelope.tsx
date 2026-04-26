@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Mail } from "lucide-react";
+import waxSeal from "@/assets/wax-seal.png";
 
 interface EnvelopeProps {
   onOpen: () => void;
@@ -77,19 +78,23 @@ const Envelope = ({ onOpen }: EnvelopeProps) => {
             <motion.div
               initial={{ scale: 1 }}
               animate={opened ? { scale: 0, opacity: 0 } : { scale: 1 }}
-              whileHover={{ scale: 1.08 }}
+              whileHover={{ scale: 1.08, filter: "drop-shadow(0 0 18px hsl(14 86% 45% / 0.55))" }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.4 }}
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 h-16 w-16 md:h-24 md:w-24 rounded-full flex items-center justify-center font-display font-semibold tracking-[0.15em] text-base md:text-xl text-primary-foreground border-2 border-primary-foreground/50 whitespace-nowrap"
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 h-20 w-20 md:h-28 md:w-28"
               style={{
-                background:
-                  "radial-gradient(circle at 30% 25%, hsl(14 86% 55%) 0%, hsl(4 92% 32%) 45%, hsl(357 100% 18%) 100%)",
-                boxShadow:
-                  "inset -4px -6px 12px hsl(357 100% 10% / 0.55), inset 4px 6px 10px hsl(33 64% 90% / 0.25), 0 8px 22px hsl(4 92% 18% / 0.55), 0 0 24px hsl(14 86% 45% / 0.35)",
-                textShadow: "0 1px 2px hsl(357 100% 10% / 0.6)",
+                filter:
+                  "drop-shadow(0 8px 18px hsl(4 92% 18% / 0.55)) drop-shadow(0 0 10px hsl(14 86% 45% / 0.25))",
               }}
             >
-              A&nbsp;&amp;&nbsp;S
+              <img
+                src={waxSeal}
+                alt="Royal Mughal wax seal with A & S monogram"
+                width={256}
+                height={256}
+                className="h-full w-full object-contain select-none pointer-events-none"
+                draggable={false}
+              />
             </motion.div>
           </div>
 
