@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { Calendar, MapPin, Clock, Share2, CalendarPlus } from "lucide-react";
+import { Calendar, MapPin, Clock, Share2, CalendarPlus, Heart } from "lucide-react";
 import arch from "@/assets/mughal-arch.png";
 import couple from "@/assets/couple-illustration.png";
 import Section from "@/components/wedding/Section";
