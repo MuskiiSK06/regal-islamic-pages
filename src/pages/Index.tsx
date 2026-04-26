@@ -149,7 +149,7 @@ const Index = () => {
           width={768}
           height={1024}
           loading="lazy"
-          className="w-44 sm:w-56 md:w-72 h-auto select-none pointer-events-none drop-shadow-[0_8px_20px_rgba(94,0,6,0.25)]"
+          className="w-64 sm:w-80 md:w-[28rem] h-auto select-none pointer-events-none drop-shadow-[0_8px_20px_rgba(94,0,6,0.25)]"
         />
         <p className="font-display tracking-[0.3em] text-[10px] text-brown/60 mt-6 mb-4">
           O U R &nbsp; S T O R Y
