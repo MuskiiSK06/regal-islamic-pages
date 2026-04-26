@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { Calendar, MapPin, Clock, Share2, CalendarPlus } from "lucide-react";
+import { Calendar, MapPin, Clock, Share2, CalendarPlus, Heart } from "lucide-react";
 import arch from "@/assets/mughal-arch.png";
 import couple from "@/assets/couple-illustration.png";
 import Section from "@/components/wedding/Section";
@@ -129,9 +129,9 @@ const Index = () => {
             className="font-script text-gold leading-[1.25] pb-3 pt-2 text-center w-full"
             style={{ fontSize: "clamp(2.25rem, 10vw, 5.5rem)" }}
           >
-            <span className="block whitespace-nowrap">Amir Sohail Shaikh</span>
+            <span className="block whitespace-nowrap" style={{ textTransform: "capitalize" }}>Amir Sohail Shaikh</span>
             <span className="block whitespace-nowrap text-gold-deep my-1" style={{ fontSize: "0.55em" }}>&amp;</span>
-            <span className="block whitespace-nowrap">Sana Khan</span>
+            <span className="block whitespace-nowrap" style={{ textTransform: "capitalize" }}>Sana Khan</span>
           </h2>
           <Divider className="mt-8" />
         </motion.div>
@@ -149,7 +149,7 @@ const Index = () => {
           width={768}
           height={1024}
           loading="lazy"
-          className="w-44 sm:w-56 md:w-72 h-auto select-none pointer-events-none drop-shadow-[0_8px_20px_rgba(94,0,6,0.25)]"
+          className="w-64 sm:w-80 md:w-[28rem] h-auto select-none pointer-events-none drop-shadow-[0_8px_20px_rgba(94,0,6,0.25)]"
         />
         <p className="font-display tracking-[0.3em] text-[10px] text-brown/60 mt-6 mb-4">
           O U R &nbsp; S T O R Y
@@ -249,9 +249,17 @@ const Index = () => {
           className="font-display text-brown/70 mt-10 text-center w-full max-w-md mx-auto px-4"
           style={{ fontSize: "clamp(0.65rem, 2.6vw, 0.8rem)", letterSpacing: "0.32em" }}
         >
-          <p className="whitespace-nowrap">AMIR SOHAIL SHAIKH</p>
+          <p className="flex items-center justify-center gap-2 whitespace-nowrap">
+            <Heart className="text-gold/60" style={{ width: "1em", height: "1em" }} fill="currentColor" strokeWidth={1.5} aria-hidden />
+            <span>AMIR SOHAIL SHAIKH</span>
+            <Heart className="text-gold/60" style={{ width: "1em", height: "1em" }} fill="currentColor" strokeWidth={1.5} aria-hidden />
+          </p>
           <p className="text-gold-deep my-1">·</p>
-          <p className="whitespace-nowrap">SANA KHAN</p>
+          <p className="flex items-center justify-center gap-2 whitespace-nowrap">
+            <Heart className="text-gold/60" style={{ width: "1em", height: "1em" }} fill="currentColor" strokeWidth={1.5} aria-hidden />
+            <span>SANA KHAN</span>
+            <Heart className="text-gold/60" style={{ width: "1em", height: "1em" }} fill="currentColor" strokeWidth={1.5} aria-hidden />
+          </p>
         </div>
         <Divider />
       </Section>
