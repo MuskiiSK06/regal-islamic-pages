@@ -249,9 +249,17 @@ const Index = () => {
           className="font-display text-brown/70 mt-10 text-center w-full max-w-md mx-auto px-4"
           style={{ fontSize: "clamp(0.65rem, 2.6vw, 0.8rem)", letterSpacing: "0.32em" }}
         >
-          <p className="whitespace-nowrap">AMIR SOHAIL SHAIKH</p>
+          <p className="flex items-center justify-center gap-2 whitespace-nowrap">
+            <Heart className="text-gold/60" style={{ width: "1em", height: "1em" }} fill="currentColor" strokeWidth={1.5} aria-hidden />
+            <span>AMIR SOHAIL SHAIKH</span>
+            <Heart className="text-gold/60" style={{ width: "1em", height: "1em" }} fill="currentColor" strokeWidth={1.5} aria-hidden />
+          </p>
           <p className="text-gold-deep my-1">·</p>
-          <p className="whitespace-nowrap">SANA KHAN</p>
+          <p className="flex items-center justify-center gap-2 whitespace-nowrap">
+            <Heart className="text-gold/60" style={{ width: "1em", height: "1em" }} fill="currentColor" strokeWidth={1.5} aria-hidden />
+            <span>SANA KHAN</span>
+            <Heart className="text-gold/60" style={{ width: "1em", height: "1em" }} fill="currentColor" strokeWidth={1.5} aria-hidden />
+          </p>
         </div>
         <Divider />
       </Section>
