@@ -126,11 +126,11 @@ const Index = () => {
             T O G E T H E R &nbsp; F O R E V E R
           </p>
           <h2
-            className="font-script text-gold leading-[1.25] pb-3 pt-2 text-center w-full"
-            style={{ fontSize: "clamp(2.25rem, 10vw, 5.5rem)" }}
+            className="text-gold leading-[1.25] pb-3 pt-2 text-center w-full"
+            style={{ fontSize: "clamp(2.25rem, 10vw, 5.5rem)", fontFamily: "'Allura', cursive" }}
           >
             <span className="block whitespace-nowrap" style={{ textTransform: "capitalize" }}>Amir Sohail Shaikh</span>
-            <span className="block whitespace-nowrap text-gold-deep my-1" style={{ fontSize: "0.55em" }}>&amp;</span>
+            <span className="block whitespace-nowrap text-gold-deep my-1" style={{ fontSize: "0.55em", fontFamily: "'Great Vibes', cursive" }}>&amp;</span>
             <span className="block whitespace-nowrap" style={{ textTransform: "capitalize" }}>Sana Khan</span>
           </h2>
           <Divider className="mt-8" />
